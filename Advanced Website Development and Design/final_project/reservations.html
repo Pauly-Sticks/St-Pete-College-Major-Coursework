@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    <title>Make your reservation for the Safety Harbor Bed & Breakfast now!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="Book your Safety Harbor vacation get away now! Safety Harbor Bed and Breakfast - Why stay at hotels? Vacation at the only Bed and Breakfast in beautiful downtown Safety Harbor. Enjoy our pristine beaches and the best restaurants in Tampa Bay.">
+    <meta name="robots" content="noindex,nofollow">
+</head>
+
+<body>
+    
+    <div class="nav-container">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-bar-logo">Safety Harbor B&B</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="tel:7275551212" class="nav-links nav-links-button hide-past-mobile">Call Now</a></li> 
+                <li><a href="index.html" class="nav-links">Home</a></li>
+                <li><a href="about.html" class="nav-links">About</a></li>
+                <li><a href="rooms.html" class="nav-links">Rooms</a></li>
+                <li><a href="packages.html" class="nav-links">Packages</a></li>
+                <li><a href="location.html" class="nav-links">Location</a></li>
+                <li><a href="reservations.html" class="nav-links nav-links-button">Reservations</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="script/app.js"></script>
+
+
+    <header class="header-reservations">
+        <h1 class="businessName">
+            Make your reservation for the Safety Harbor Bed & Breakfast now!
+        </h1>
+        
+    </header>
+
+       <main>
+            <div class="reservation-div-one">
+                <h2>Reservations Form</h2>
+            </div>  
+
+            <div class="reservation-form">
+                <form method="post" action="mailto:paulstickrath@msn.com">
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="fname">First Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="fname" name="firstname" placeholder="Your first name..">
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="lname">Last Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cust-address">Address</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="cust-address" name="Address" placeholder="Your address..">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="date-of-arrival">Date Arriving:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="date" id="date-of-arrival" name="Date Arriving">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="number-of-nights">Number of nights staying:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="number" id="number-of-nights" name="nights" placeholder="3..">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="phone">Enter your phone number:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="555-555-5555...">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="email">Enter your email:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" id="email" name="email" placeholder="john.doe@hotmail.com">
+                        </div>
+                    </div> 
+                    
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                      </div>
+                </form>
+            </div>
+
+            <div class="reservation-disclaimer">
+                <p>
+                    We strive to get back to you within 24 hours of submittal
+                </p>
+            </div>
+        
+    </main>
+
+    <footer>
+        <div class="footerBorder">
+            <picture class="logo">
+                <img src="images/logo.jpg" 
+                alt="" 
+                class="logoImg">
+            </picture>
+
+            <div class="businessAddress">
+                <p>
+                    Safety Harbor Bed and Breakfast<br>
+                    2020 Safety Way<br>
+                    Safety Harbor, FL 33880<br><br>
+                    727-555-1212<br>
+                </p>
+            </div>
+
+            <div class="copyRight">
+                Copyright &copy; Safety Harbor Bed & Breakfast<br>
+                Web services by Paul Stickrath LLC<br>   
+                <a href="mailto:paulstickrath@gmail.com" target="_blank">paulstickrath@gmail.com.com</a><br>
+                Updated 1/25/2023
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
