@@ -1,0 +1,488 @@
+/* TABLE OF CONTENTS
+
+    1. Global Styles
+        a. Menu Table
+    2. Layout
+        a. About Page
+        b. Specials Page
+        c. Menu Page
+        d. Gallery Page
+        e. Contact Page
+    3. Images
+    4. Media
+        a. 600px and up
+        b. 1240px and up
+
+*/
+
+
+/*  =================
+    1. Global Styles
+    ================= */      
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #2c669c;}
+
+.wrapper {
+    background-color: #194099;
+    color: #FFD88B;
+
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(5px);
+}
+
+nav { 
+    color: #6DC7C7;
+    text-align: center;
+    font-weight: bold;
+    height: auto;
+    background-color: #194099;
+    display: block;
+    position: sticky;
+    top: 0px;
+    border: #FFD88B groove 6px;
+    min-width: 380px;
+    grid-area: nav;
+        }
+
+nav ul {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5px;
+    list-style-type: none;
+}
+
+nav li {
+    margin: 5Px;
+    border: #FFD68B groove 2px;
+    padding: 5PX;
+}
+
+nav a {     
+    text-decoration: none;
+    }
+
+nav a:link {color: #FFD68B}
+    nav a:visited {color: #b8a583}
+    nav a:hover {color: yellow;}
+
+header {    
+    background-image:  url(images/sunsetbanner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    line-height: 250px;
+    display: block;     
+    min-width: 380px;
+}
+
+header a {
+    text-decoration: none;
+    color: #1b3d8b;
+    font-size: 200%;
+    font-style: italic;
+    text-align: right;
+    text-shadow: 10px 10px 10px #9e9696;
+}
+
+.inner {
+    margin-right: 40px;
+}
+
+header a:link {color: #2553bc;}
+    header a:visited {color:#2552bb;}
+    header a:hover {color: rgb(154, 80, 80);;}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.style1  {
+    margin: 1.5em;
+    padding: 10px;
+    background-color: #88c3c3;
+    color: #1a106b;
+    border: #FFD88B groove 6px;
+    box-shadow: 10px 10px #777;
+}
+
+.style2  {
+    margin: 1.5em;
+    padding: 10px;
+    background-color: #88c3c3;
+    color: #1a106b;
+    border: #FFD88B groove 6px;
+    box-shadow: 10px 10px #777;
+}
+
+.style3  {
+    margin: 1.5em;
+    padding: 10px;
+    background-color: #FFBF8B;
+    color: #1a106b;
+    border: #FFD88B groove 6px;
+    box-shadow: 10px 10px #777;
+}
+
+.centertxt {
+    text-align: center;
+}
+
+.address {
+    color: #1a106b;
+    background-color: yellow;
+    margin: 1.5em;
+    padding: 10px;
+    border: #FFD88B groove 6px;
+    box-shadow: 10px 10px #777;
+}
+
+.busname {
+    font-size: 130%;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Georgia, serif;
+}
+
+footer {   
+    padding-top: 1em; 
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    background-color: #152c62;
+    color: #FFD68B;
+}
+
+footer a:link {color: #77dbdb}
+    footer a:visited {color: #5fb3b3}
+    footer a:hover {color: yellow}
+
+#desktop {
+    display: none;
+}
+
+caption {
+    padding: .5em;
+}
+
+/*  =================
+    1.a Menu Table
+    ================= */   
+
+.mentitle {
+    font-size: 2em;
+}
+
+.mendiv {
+    min-width: 380px;
+    margin:1em;
+}
+
+    table {
+    margin:auto;
+    border: 5px solid #000066;
+    min-width: 300px;
+    border-spacing: 0;
+}
+
+td, th {
+    border-style: none;
+    padding: 0.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+tr:nth-of-type(even) {
+    background-color: #f9e9c9;
+}
+
+
+
+caption {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;
+    background-color: #000066;
+    color: #FFD88B;
+}
+
+
+/*  =================
+    2. Layout
+    ================= */            
+
+    /* a. About Page */
+
+    .aboutcont {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content:space-around;
+        flex-basis:content;
+        padding: 1.5em;
+    }
+
+    /* b. Specials Page */
+
+    .speccont {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-basis: content;
+        margin: 15px;
+    } 
+
+    /* c. Menu Page */
+
+
+    /* d. Gallery Page */
+
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 1em;
+      }
+
+    /* e. contact page */
+    
+    .contcont {
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        flex-basis: content;
+        margin: 15px;
+    }
+
+
+
+
+
+/*  =================
+    3. Images
+    ================= */    
+
+      .photobox {
+        border: #FFD88B groove 6px;
+        color: #152c62;
+        font-size: 130%;
+        background-color: white;
+        padding: 10px 10px 5px 10px;
+        text-align: center;
+        box-shadow: 10px 10px #777;
+        margin: 1em;
+      }
+
+      img {
+          max-width: 100%;
+          width: auto;
+      }
+
+    .fishbasket {
+        max-width: 90%;
+        margin: 1.5em;
+        box-shadow: 10px 10px #777;
+    }
+
+    .shellnet {
+        max-width: 500px;
+        height: auto;
+        margin: 1.5em;
+        align-items: center;
+        box-shadow: 10px 10px #777;
+        }
+    
+    .specials { /* Could not find a free special board that was not pizza related */
+        height: 300px;
+        margin: 1.5em;
+        box-shadow: 10px 10px #777;
+    }
+
+
+    .map {
+        height: 600px;
+        border: #FFD88B groove 6px;
+        background-color: white;
+    }
+
+
+
+
+/*  =================
+    4. Media
+    ================= */    
+
+
+    /* 600px and up */
+
+    @media (min-width: 600px) {
+        .inner  {
+            margin-right: 100px;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            min-width: auto;
+            width: 100%
+        }
+
+        nav {
+            width: 100%;
+        }
+
+
+        header {
+            width: 100%;
+        }
+
+        .indcont1  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 400px;
+        }
+
+        .style1.index {
+            width: 300px;
+            height: 350px
+        }
+
+        .style1.about {
+            max-width: 600px;
+        }
+
+        .shellnet {
+            background-color: white;
+            min-width: 0;
+            max-width: 600px;
+            margin: 1.5em;
+        }
+
+        .fishbasket {
+            min-width: 0;
+            height: fit-content;
+            max-height: 350px;
+        }
+
+        .indcont2  {
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            flex-basis: content;
+        }        
+
+        footer  {
+            width: 100%;
+            text-align: center;
+        }
+
+        #mobile {
+            display: none; 
+        }
+
+        #desktop {
+            display: block;
+        }
+
+        .menu {
+            display: block;
+
+        }
+
+        .mendiv {
+            margin-right: 10%;
+            margin-left: 10%;
+        }
+
+    }
+
+    /* 1240px and up */
+
+    @media (min-width: 1024px) {
+
+        body    {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .inner {
+            margin-right: 50%;
+        }
+
+        .largeindexcont {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 400px;
+        }
+
+        .style1.index {
+            width: 250px;
+            height: 350px
+        }
+
+        .style2.index {
+            width: 250px;
+            height: 350px
+        }
+
+        .aboutcont  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        .shellnet {
+                background-color: white;
+                min-width: 0;
+                max-width: 600px;
+                margin: 1.5em;
+            }
+
+        .speccont  {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+        }
+
+        .mendiv {
+            margin-right: 20%;
+            margin-left: 20%;
+        }
+    }
+
+    @media (min-width: 2100px) {
+        header {
+            height: 400px;
+        }
+    }
