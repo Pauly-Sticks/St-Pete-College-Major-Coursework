@@ -1,7 +1,7 @@
 {
-  "name": "simple_server",
+  "name": "second_server",
   "version": "1.0.0",
-  "description": "Module 2 server program",
+  "description": "Module 2 coursework",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
