@@ -1,0 +1,13 @@
+
+{
+    "author": "Paul Stickrath",
+    "name": "censorify",
+    "description": "Censor words out of text",
+    "version": "0.0.1",
+    "main": "censortext",
+    "dependencies": {},
+    "engines": {
+        "node": "*"
+    }
+}
+
