@@ -1,3 +1,3 @@
 "use strict";
 
-onsole.log("Hello World!");
+console.log("Hello World!");
